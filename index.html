@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="src/css/style.css" />
+		<title>Shop</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg pt-2">
+					<a class="navbar_brand navbar-brand" href="#">MNML</a>
+
+					<div class="mobile-nav">
+						<a href="#" class="basket-img-mobile">
+							<img src="./src/images/корзина.png" alt="корзина покупок" />
+							<span class="bnt-cart-count-mobile">0</span>
+						</a>
+
+						<button
+							class="btn-mobile navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-list navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-item-link" href="#">SHOP</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-item-link" href="#">LOOKBOOK</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-item-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									CONTACT
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="#" onclick="copyToClipboard('+7 (234) 567-89-00')">
+											📞 +44 (7800) 767 690
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#" onclick="copyToClipboard('Pochta@mail.com')">
+											✉️ Pochta@mail.com
+										</a>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onclick="copyToClipboard('г Москва, ул 1-я Тверская-Ямская, д 21')"
+										>
+											📍 1 Grey St., London, N.E. 10, England.
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-item-link" href="#">ABOUT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-item-link" href="#related-products">STOCK</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="basket-img">
+									<img src="./src/images/корзина.png" alt="корзина покупок" />
+									<span class="bnt-cart-count">0</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-12 col-lg-6 d-flex">
+									<div id="card1" class="preview-card">
+										<div class="main-card">
+											<img src="./src/images/очки номер 3.png" class="img-fluid main-image" alt="Товар 1" />
+										</div>
+										<div class="secondary-card-nav">
+											<ul class="secondary-card-items">
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/очки номер 1.png" alt="Очки 1" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/очки номер 2.png" alt="Очки 2" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/очки номер 4.png" alt="Очки 3" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/очки номер 3.png" alt="Очки 4" class="thumbnail" />
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+									<h2 class="preview-card-title">Timeless</h2>
+									<p class="preview-card-price">$180</p>
+									<p class="preview-card-text">
+										From Han Kjobenhavn, vintage-inspired wayfarer sunglasses handmade with a sophisticated Amber and
+										Green colorway and Carl Zeiss lenses
+									</p>
+									<div class="quantity-selector">
+										<button class="minus-btn">-</button>
+										<span class="quantity-text">
+											Qty:
+											<span class="quantity-value">1</span>
+										</span>
+
+										<button class="plus-btn">+</button>
+									</div>
+									<button type="button" class="btn preview-card-bnt">ADD TO CART</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-12 col-lg-6 d-flex">
+									<div id="card2" class="preview-card">
+										<div class="main-card">
+											<img
+												src="./src/images/MP002XW0ZYNZ_23188610_3_v1.png"
+												class="img-fluid main-image"
+												alt="Товар 2"
+											/>
+										</div>
+										<div class="secondary-card-nav">
+											<ul class="secondary-card-items">
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/MP002XW0ZYNZ_23188608_1_v1.png" alt="Очки 1" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/MP002XW0ZYNZ_23188609_2_v1.png" alt="Очки 2" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/MP002XW0ZYNZ_23188610_3_v1.png" alt="Очки 3" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img
+														src="./src/images/MP002XW0ZYNZ_23188611_4_v1-Photoroom.png"
+														alt="Очки 4"
+														class="thumbnail"
+													/>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+									<h2 class="preview-card-title">Infinity</h2>
+									<p class="preview-card-price">$140</p>
+									<p class="preview-card-text">
+										Modern sunglasses with an elegant design, handcrafted with a refined combination of deep black and
+										silver tones, featuring Carl Zeiss lenses for crystal-clear vision
+									</p>
+									<div class="quantity-selector">
+										<button class="minus-btn">-</button>
+										<span class="quantity-text">
+											Qty:
+											<span class="quantity-value">1</span>
+										</span>
+
+										<button class="plus-btn">+</button>
+									</div>
+									<button type="button" class="btn preview-card-bnt">ADD TO CART</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-12 col-lg-6 d-flex">
+									<div id="card3" class="preview-card">
+										<div class="main-card">
+											<img
+												src="./src/images/RTLADT784201_24699568_3_v1.png"
+												class="img-fluid main-image"
+												alt="Товар 3"
+											/>
+										</div>
+										<div class="secondary-card-nav">
+											<ul class="secondary-card-items">
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/RTLADT784201_24699566_1_v1.png" alt="Очки 1" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/RTLADT784201_24699567_2_v1.png" alt="Очки 2" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/RTLADT784201_24699568_3_v1.png" alt="Очки 3" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/RTLADT784201_24699569_4_v1.png" alt="Очки 4" class="thumbnail" />
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+									<h2 class="preview-card-title">Eclipse</h2>
+									<p class="preview-card-price">$120</p>
+									<p class="preview-card-text">
+										Handcrafted sunglasses featuring a sleek black and charcoal colorway with a contemporary design and
+										Carl Zeiss lenses for exceptional clarity and protection
+									</p>
+									<div class="quantity-selector">
+										<button class="minus-btn">-</button>
+										<span class="quantity-text">
+											Qty:
+											<span class="quantity-value">1</span>
+										</span>
+
+										<button class="plus-btn">+</button>
+									</div>
+									<button type="button" class="btn preview-card-bnt">ADD TO CART</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-12 col-lg-6 d-flex">
+									<div id="card4" class="preview-card">
+										<div class="main-card">
+											<img
+												src="./src/images//RTLADT180501_24561525_3_v1.png"
+												class="img-fluid main-image"
+												alt="Товар 4"
+											/>
+										</div>
+										<div class="secondary-card-nav">
+											<ul class="secondary-card-items">
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/RTLADT180501_24561523_1_v1.png" alt="Очки 1" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/RTLADT180501_24561524_2_v1.png" alt="Очки 2" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img src="./src/images/RTLADT180501_24561525_3_v1.png" alt="Очки 3" class="thumbnail" />
+												</li>
+												<li class="secondary-card-item img-fluid">
+													<img
+														src="./src/images/RTLADT180501_24561526_4_v1-Photoroom.png"
+														alt="Очки 4"
+														class="thumbnail"
+													/>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+									<h2 class="preview-card-title">Horizon</h2>
+									<p class="preview-card-price">$160</p>
+									<p class="preview-card-text">
+										Stylish, handmade sunglasses with a matte tortoiseshell frame and gradient lenses, offering a
+										timeless look and Carl Zeiss lenses for superior vision
+									</p>
+									<div class="quantity-selector">
+										<button class="minus-btn">-</button>
+										<span class="quantity-text">
+											Qty:
+											<span class="quantity-value">1</span>
+										</span>
+
+										<button class="plus-btn">+</button>
+									</div>
+									<button type="button" class="btn preview-card-bnt">ADD TO CART</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="custom-carousel-controls">
+							<button
+								class="custom-control-prev"
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide="prev"
+							>
+								&#10094;
+							</button>
+							<button
+								class="custom-control-next"
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide="next"
+							>
+								&#10095;
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section id="related-products" class="related-products">
+			<div class="container">
+				<h2 class="text-center">Related Products</h2>
+				<div class="row justify-content-center">
+					<div class="col-6 col-lg-3 text-center">
+						<img src="./src/images/RTLADR818401_24314555_1_v1.jpg" alt="Sun Buddies" class="img-fluid" />
+						<h3>Sun Buddies</h3>
+						<p>$215</p>
+					</div>
+					<div class="col-6 col-lg-3 text-center">
+						<img src="./src/images/RTLADR818401_24314555_1_v1.jpg" alt="The Stella" class="img-fluid" />
+						<h3>The Stella</h3>
+						<p>$180</p>
+					</div>
+					<div class="col-6 col-lg-3 text-center">
+						<img src="./src/images/RTLADR818401_24314555_1_v1.jpg" alt="Paul Senior" class="img-fluid" />
+						<h3>Paul Senior</h3>
+						<p>$240</p>
+					</div>
+					<div class="col-6 col-lg-3 text-center">
+						<img src="./src/images/RTLADR818401_24314555_1_v1.jpg" alt="Clement" class="img-fluid" />
+						<h3>Clement</h3>
+						<p>$210</p>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-6 col-lg-3 text-center">
+							<img src="./src/images/RTLADR818401_24314555_1_v1.jpg" alt="Sun Buddies" class="img-fluid" />
+							<h3>Lunar Eclipse</h3>
+							<p>$130</p>
+						</div>
+						<div class="col-6 col-lg-3 text-center">
+							<img src="./src/images/RTLADR818401_24314555_1_v1.jpg" alt="The Stella" class="img-fluid" />
+							<h3>Atlas Peak</h3>
+							<p>$120</p>
+						</div>
+						<div class="col-6 col-lg-3 text-center">
+							<img src="./src/images/RTLADR818401_24314555_1_v1.jpg" alt="Paul Senior" class="img-fluid" />
+							<h3>Nova Classic</h3>
+							<p>$240</p>
+						</div>
+						<div class="col-6 col-lg-3 text-center">
+							<img src="./src/images/RTLADR818401_24314555_1_v1.jpg" alt="Clement" class="img-fluid" />
+							<h3>Orion Breeze</h3>
+							<p>$145</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<button id="scrollToTop" class="scroll-btn">↑</button>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script type="module" src="src/js/app.js"></script>
+	</body>
+</html>

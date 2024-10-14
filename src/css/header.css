@@ -1,0 +1,115 @@
+.navbar_brand {
+	padding-bottom: 0;
+	font-weight: 500;
+	font-family: "Afacad Flux";
+	font-size: 36px;
+}
+
+.mobile-nav {
+	display: flex;
+	align-items: center;
+}
+.basket-img-mobile {
+	display: none;
+}
+.basket-img-mobile img {
+	position: relative;
+
+	width: 40px;
+	margin-right: 10px;
+}
+
+.bnt-cart-count-mobile {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-count-btn);
+	color: white;
+	border-radius: 50%;
+	padding: 2px 3px;
+	font-size: 10px;
+	font-weight: bold;
+	min-width: 20px;
+	top: 11px;
+	right: 62px;
+}
+
+.navbar-list {
+	column-gap: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.nav-item-link {
+	font-size: 16px;
+	color: #000000;
+	text-decoration-line: none;
+	font-weight: 450;
+}
+
+.nav-item-link:hover {
+	border-bottom: solid 2px #000000;
+}
+
+.basket-img img {
+	position: relative;
+	width: 35px;
+	height: auto;
+	transition: transform 0.3s;
+	margin-bottom: 4px;
+}
+
+.bnt-cart-count {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 37px;
+	right: -7px;
+	background-color: var(--color-count-btn);
+	color: white;
+	border-radius: 50%;
+	padding: 2px 3px;
+	font-size: 10px;
+	font-weight: bold;
+	min-width: 20px;
+	display: none;
+}
+
+.basket-img:hover img {
+	transform: scale(1.2);
+}
+
+.dropdown-menu a {
+	font-family: "Afacad Flux";
+	color: #000000;
+}
+.dropdown-menu a:focus {
+	background-color: #ffffff;
+	color: #000000;
+}
+.dropdown-menu a:hover {
+	background-color: var(--color-hover-btn);
+}
+
+@media (max-width: 991px) {
+	.basket-img {
+		display: none;
+	}
+	.basket-img-mobile {
+		display: block;
+	}
+	.navbar-list {
+		padding-top: 25px;
+		row-gap: 15px;
+		align-items: start;
+	}
+
+	.nav-item-link:hover {
+		border-bottom: none;
+	}
+	.bnt-cart-count-mobile {
+		display: none;
+	}
+}

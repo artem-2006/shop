@@ -1,0 +1,21 @@
+.related-products img {
+	margin-bottom: 15px;
+}
+
+.related-products h3 {
+	font-size: 22px;
+	margin-bottom: 5px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.related-products h2 {
+	font-size: 28px;
+	margin-top: 60px;
+	padding-top: 40px;
+	margin-bottom: 30px;
+}
+
+.related-products p {
+	font-size: 19px;
+	color: #555;
+	margin-bottom: 30px;
+}
