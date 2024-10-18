@@ -1,7 +1,7 @@
-import { counter } from "./counter.js";
-import { imageSwitcher } from "./image-switcher.js";
-import { scrollTopBtn } from "./top-scroll-btn.js";
+import { counter, imageSwitcher, scrollTopBtn } from "./buttons.js";
+import { addBasket } from "./basket.js";
 
-counter();
 imageSwitcher();
+counter();
 scrollTopBtn();
+addBasket();

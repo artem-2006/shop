@@ -5,6 +5,7 @@
 @import url(./main.css);
 @import url(./related-products.css);
 @import url(./instagram.css);
+@import url(./modal-basket.css);
 
 :root {
 	--color-background-light: #f7f7f7;

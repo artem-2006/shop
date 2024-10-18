@@ -1,5 +1,9 @@
-.row {
-	min-height: 830px;
+.carousel-item .row {
+	min-height: 835px;
+}
+
+.carousel {
+	overflow: visible;
 }
 
 .custom-carousel-controls {
@@ -105,7 +109,6 @@ button:focus {
 	right: -50px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 	margin-left: auto;
 	margin-right: 0;
@@ -125,9 +128,7 @@ button:focus {
 	justify-content: center;
 	list-style-type: none;
 	column-gap: 20px;
-	row-gap: 20px;
 	padding: 0;
-
 	margin: 0;
 }
 
@@ -140,10 +141,6 @@ button:focus {
 	.preview-card {
 		position: relative;
 		right: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		margin-left: auto;
 		margin-right: 0;
 		margin-top: 70px;
@@ -164,14 +161,36 @@ button:focus {
 	.secondary-card-items {
 		text-align: center;
 	}
+	.preview-card-bnt {
+		margin-bottom: 60px;
+	}
+	.custom-carousel-controls {
+		position: absolute;
+		bottom: 0px;
+	}
 }
 
 @media (max-width: 1199px) {
 	.secondary-card-item {
-		width: calc(50% - 10px);
+		width: calc(50% - 20px);
 	}
 
 	.secondary-card-items {
 		text-align: center;
+	}
+	.preview-card {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 70px;
+	}
+
+	.preview-card-title {
+		font-size: 55px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		padding-bottom: 30px;
+		color: black;
+		margin: 0;
+		margin-top: 60px;
 	}
 }

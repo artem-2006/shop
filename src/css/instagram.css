@@ -1,0 +1,20 @@
+.instagram-images {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin: 0;
+}
+.instagram {
+	padding-bottom: 100px;
+}
+
+.instagram-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.instagram h2 {
+	margin-bottom: 20px;
+	margin-top: 70px;
+	font-size: 28px;
+}
