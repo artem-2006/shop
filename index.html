@@ -108,7 +108,11 @@
 										<div class="secondary-card-nav">
 											<ul class="secondary-card-items">
 												<li class="secondary-card-item img-fluid">
-													<img src="./src/images/очки номер 1 (карточка номер 1).png" alt="Очки 1" class="thumbnail" />
+													<img
+														src="./src/images/очки номер 1 (карточка номер 1).png"
+														alt="Очки 1"
+														class="thumbnail first-img-glasses"
+													/>
 												</li>
 												<li class="secondary-card-item img-fluid">
 													<img src="./src/images/очки номер 2 (карточка номер 1).png" alt="Очки 2" class="thumbnail" />
@@ -157,7 +161,11 @@
 										<div class="secondary-card-nav">
 											<ul class="secondary-card-items">
 												<li class="secondary-card-item img-fluid">
-													<img src="./src/images/очки номер 1 (карточка номер 2).png" alt="Очки 1" class="thumbnail" />
+													<img
+														src="./src/images/очки номер 1 (карточка номер 2).png"
+														alt="Очки 1"
+														class="thumbnail first-img-glasses"
+													/>
 												</li>
 												<li class="secondary-card-item img-fluid">
 													<img src="./src/images/очки номер 2 (карточка номер 2).png" alt="Очки 2" class="thumbnail" />
@@ -207,7 +215,11 @@
 										<div class="secondary-card-nav">
 											<ul class="secondary-card-items">
 												<li class="secondary-card-item img-fluid">
-													<img src="./src/images/очки номер 1 (карточка номер 4).png" alt="Очки 1" class="thumbnail" />
+													<img
+														src="./src/images/очки номер 1 (карточка номер 4).png"
+														alt="Очки 1"
+														class="thumbnail first-img-glasses"
+													/>
 												</li>
 												<li class="secondary-card-item img-fluid">
 													<img src="./src/images/очки номер 2 (карточка номер 4).png" alt="Очки 2" class="thumbnail" />
@@ -257,7 +269,11 @@
 										<div class="secondary-card-nav">
 											<ul class="secondary-card-items">
 												<li class="secondary-card-item img-fluid">
-													<img src="./src/images/очки номер 1 (карточка номер 3).png" alt="Очки 1" class="thumbnail" />
+													<img
+														src="./src/images/очки номер 1 (карточка номер 3).png"
+														alt="Очки 1"
+														class="thumbnail first-img-glasses"
+													/>
 												</li>
 												<li class="secondary-card-item img-fluid">
 													<img src="./src/images/очки номер 2 (карточка номер 3).png" alt="Очки 2" class="thumbnail" />
@@ -424,27 +440,6 @@
 			</div>
 		</section>
 
-		<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-slideout">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="cartModalLabel">Basket</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<ul id="cartItems" class="list-group"></ul>
-						<p>
-							Total:
-							<span id="cartTotal">$0</span>
-						</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-dark">Place an order</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<footer class="footer">
 			<div class="container">
 				<div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -468,6 +463,68 @@
 			</div>
 		</footer>
 
+		<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-slideout">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="cartModalLabel">Basket</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-body">
+							<img
+								id="emptyCartImage"
+								src="./src/images/icon/фото пустой корзины.jpeg"
+								alt="Cart is empty"
+								style="display: none"
+							/>
+							<ul id="cartItems" class="list-group"></ul>
+						</div>
+
+						<ul id="cartItems" class="list-group"></ul>
+					</div>
+					<div class="modal-footer">
+						<p>
+							Total:
+							<span id="cartTotal">$0</span>
+						</p>
+						<p>
+							Items in basket:
+							<span id="cartItemCount">0</span>
+						</p>
+
+						<button type="button" class="btn-basket btn btn-dark">PLACE AN ORDER</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="modal fade"
+			id="orderConfirmationModal"
+			tabindex="-1"
+			aria-labelledby="orderConfirmationModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="orderConfirmationModalLabel">Order Confirmation</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>Your order has been placed successfully!</p>
+						<p>
+							Total amount:
+							<span id="orderTotalAmount"></span>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<button id="scrollToTop" class="scroll-btn">↑</button>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

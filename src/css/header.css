@@ -70,13 +70,18 @@
 	background-color: var(--color-count-btn);
 	color: white;
 	border-radius: 50%;
-	padding: 2px 3px;
-	font-size: 10px;
+
+	font-size: 12px;
 	font-weight: bold;
-	min-width: 20px;
+	min-width: 19px;
 	display: none;
 }
-
+.bnt-cart-count.show {
+	display: flex;
+}
+.bnt-cart-count-mobile.show {
+	display: flex;
+}
 .basket-img:hover img {
 	transform: scale(1.2);
 }
