@@ -7,10 +7,19 @@
 	padding-bottom: 100px;
 }
 
+.instagram-item {
+	overflow: hidden;
+}
+
 .instagram-item img {
 	width: 100%;
 	height: auto;
 	display: block;
+	transition: transform 0.3s ease;
+}
+
+.instagram-item img:hover {
+	transform: scale(1.1);
 }
 
 .instagram h2 {

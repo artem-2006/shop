@@ -70,18 +70,18 @@
 .modal-footer button {
 	width: 100%;
 	height: 50px;
-	font-size: 16px;
+	font-size: 15px;
 	background-color: #141414;
 	font-weight: 400;
 }
 .modal-footer p {
 	padding-left: 5px;
 	padding-right: 20px;
-	font-size: 20px;
+	font-size: 19px;
 }
 .modal-footer .quantity-text {
 	padding-right: 5px;
-	font-size: 20px;
+	font-size: 19px;
 }
 .btn-basket {
 	border-radius: 0;

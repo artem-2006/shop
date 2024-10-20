@@ -462,7 +462,7 @@
 				</div>
 			</div>
 		</footer>
-
+		<!-- модальное окно корзина покупок -->
 		<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-slideout">
 				<div class="modal-content">
@@ -498,7 +498,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- модальное окно после заказа -->
 		<div
 			class="modal fade"
 			id="orderConfirmationModal"
@@ -525,6 +525,67 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- модальное окно для карточек с товаром  -->
+		<div
+			class="modal fade modal-cart"
+			id="productModal"
+			tabindex="-1"
+			aria-labelledby="productModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sx-12 col-lg-7">
+									<div class="product-image-container d-flex justify-content-center">
+										<img src="" alt="Main product image" class="main-product-image img-fluid" />
+									</div>
+									<div class="product-gallery d-flex">
+										<div class="gallery-item">
+											<img src="" alt="Gallery thumb 1" class="gallery-preview img-fluid" />
+										</div>
+										<div class="gallery-item">
+											<img src="" alt="Gallery thumb 2" class="gallery-preview img-fluid" />
+										</div>
+										<div class="gallery-item">
+											<img src="" alt="Gallery thumb 3" class="gallery-preview img-fluid" />
+										</div>
+										<div class="gallery-item">
+											<img src="" alt="Gallery thumb 4" class="gallery-preview img-fluid" />
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="col-sx-12 col-lg-5 product-modal d-flex flex-column align-items-center justify-content-center"
+								>
+									<h2 class="product-title" id="productTitle">Timeless</h2>
+									<p class="product-price" id="productPrice">$180</p>
+									<p class="product-description" id="productDescription">
+										From Han Kjobenhavn, vintage-inspired wayfarer sunglasses handmade with a sophisticated Amber and
+										Green colorway and Carl Zeiss lenses.
+									</p>
+									<div class="quantity-selector-modal d-flex align-items-center mb-3">
+										<button class="minus-btn-modal btn-outline-secondary">-</button>
+										<span class="quantity-text-modal">
+											Qty:
+											<span class="quantity-value-modal">1</span>
+										</span>
+
+										<button class="plus-btn-modal btn-outline-secondary">+</button>
+									</div>
+									<button type="button" class="btn btn-dark add-to-cart-btn">ADD TO CART</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<button id="scrollToTop" class="scroll-btn">↑</button>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -532,5 +593,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script type="module" src="src/js/app.js"></script>
+		<script type="module" src="./src/js/ProductCard.js"></script>
 	</body>
 </html>
