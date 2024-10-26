@@ -12,24 +12,35 @@ function initializeProductCards() {
 	document.querySelectorAll(".related-products .col-6").forEach((card) => {
 		card.addEventListener("click", function () {
 			const productTitle = card.querySelector("h3").textContent;
-
 			const productData = productsData[productTitle];
+
 			if (productData) {
 				document.getElementById("productTitle").textContent = productData.title;
 				document.getElementById("productPrice").textContent = productData.price;
-				document.querySelector(".main-product-image").src = productData.mainImg;
-				document.getElementById("productDescription").textContent = productData.description;
+
+				const mainImage = new Image();
+				mainImage.src = productData.mainImg;
+
+				mainImage.onload = function () {
+					document.querySelector(".main-product-image").src = productData.mainImg;
+				};
 
 				const galleryPreviewElements = document.querySelectorAll(".gallery-item img");
 				productData.thumbnails.forEach((thumb, index) => {
+					const thumbnailImage = new Image();
+					thumbnailImage.src = thumb;
+
 					if (galleryPreviewElements[index]) {
-						galleryPreviewElements[index].src = thumb;
+						thumbnailImage.onload = function () {
+							galleryPreviewElements[index].src = thumb;
+						};
 					}
 				});
+
+				document.getElementById("productDescription").textContent = productData.description;
 			}
 
 			document.querySelector(".quantity-value-modal").textContent = "1";
-
 			new bootstrap.Modal(document.getElementById("productModal")).show();
 		});
 	});
