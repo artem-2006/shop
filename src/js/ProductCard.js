@@ -1,7 +1,7 @@
-import { products } from "./Data.js";
+import { productsData } from "./productsData.js";
 
 function updateQuantity(value) {
-	const quantityValueElement = document.querySelector(".quantity-value");
+	const quantityValueElement = document.querySelector(".quantity-value-modal");
 	let quantity = parseInt(quantityValueElement.textContent);
 	quantity += value;
 	if (quantity < 1) quantity = 1;
@@ -13,14 +13,14 @@ function initializeProductCards() {
 		card.addEventListener("click", function () {
 			const productTitle = card.querySelector("h3").textContent;
 
-			const productData = products[productTitle];
+			const productData = productsData[productTitle];
 			if (productData) {
 				document.getElementById("productTitle").textContent = productData.title;
 				document.getElementById("productPrice").textContent = productData.price;
 				document.querySelector(".main-product-image").src = productData.mainImg;
 				document.getElementById("productDescription").textContent = productData.description;
 
-				const galleryPreviewElements = document.querySelectorAll(".gallery-item .gallery-preview");
+				const galleryPreviewElements = document.querySelectorAll(".gallery-item img");
 				productData.thumbnails.forEach((thumb, index) => {
 					if (galleryPreviewElements[index]) {
 						galleryPreviewElements[index].src = thumb;
@@ -28,7 +28,7 @@ function initializeProductCards() {
 				});
 			}
 
-			document.querySelector(".quantity-value").textContent = "1";
+			document.querySelector(".quantity-value-modal").textContent = "1";
 
 			new bootstrap.Modal(document.getElementById("productModal")).show();
 		});
@@ -36,16 +36,12 @@ function initializeProductCards() {
 }
 
 function initializeQuantityButtons() {
-	document.querySelectorAll(".btn-decrement").forEach((btn) => {
-		btn.addEventListener("click", function () {
-			updateQuantity(-1);
-		});
+	document.querySelector(".minus-btn-modal").addEventListener("click", function () {
+		updateQuantity(-1);
 	});
 
-	document.querySelectorAll(".btn-increment").forEach((btn) => {
-		btn.addEventListener("click", function () {
-			updateQuantity(1);
-		});
+	document.querySelector(".plus-btn-modal").addEventListener("click", function () {
+		updateQuantity(1);
 	});
 }
 

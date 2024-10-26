@@ -15,31 +15,40 @@
 
 .custom-control-prev,
 .custom-control-next {
+	display: flex;
+	align-items: center;
 	width: 80px;
-	height: 35px;
+	height: 39px;
 	background-color: #ffffff;
 	color: rgb(0, 0, 0);
 	border: none;
-	font-size: 13px;
+	font-size: 11px;
 	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.custom-control-prev {
+	border-top-left-radius: 10px;
 }
 
 .custom-control-prev:hover,
 .custom-control-next:hover {
 	background-color: var(--color-hover-btn);
+	color: #000000;
 }
 
 .carousel-item {
 	background-color: var(--color-background-light);
+	border-radius: 10px;
 }
 
 .preview-card-bnt {
 	color: #ffffff;
 	background-color: #141414;
 	width: 360px;
-	padding: 12px 0;
-	border-radius: 0;
-	font-size: 18px;
+	padding: 13px 0;
+	border-radius: 8px;
+	font-size: 17px;
 }
 
 .preview-card-bnt:hover {
@@ -80,6 +89,7 @@
 	width: 360px;
 	padding: 4px;
 	margin-bottom: 20px;
+	border-radius: 11px;
 }
 
 .quantity-selector button {
@@ -88,6 +98,8 @@
 	border: 1px solid #ccc;
 	background-color: white;
 	cursor: pointer;
+	border-radius: 8px;
+	transition: all 0.3s;
 }
 
 .quantity-selector button:hover {
@@ -140,10 +152,10 @@ button:focus {
 .secondary-card-item img {
 	width: 110px;
 	height: auto;
-	transition: all 0.2s;
+	transition: all 0.3s;
 }
 .secondary-card-item img:hover {
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
 
 @media (max-width: 991px) {

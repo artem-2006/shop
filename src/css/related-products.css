@@ -19,6 +19,14 @@
 	color: #555;
 	margin-bottom: 30px;
 }
+.related-products img {
+	border-radius: 10px;
+	width: 98%;
+	transition: all 0.3s;
+}
+.related-products img:hover {
+	opacity: 50%;
+}
 
 .modal-cart .modal-lg {
 	max-width: 1000px;
@@ -79,16 +87,18 @@
 	width: 300px;
 	padding: 4px;
 	margin-bottom: 20px;
-	border-radius: 0;
+	border-radius: 9px;
 }
 
 .quantity-selector-modal button {
-	width: 35px;
-	height: 35px;
+	width: 40px;
+	height: 40px;
 	border: 1px solid #ccc;
 	background-color: white;
 	cursor: pointer;
-	border-radius: 0;
+	border-radius: 6px;
+	transition: all 0.3s;
+	font-size: 15px;
 }
 
 .quantity-selector-modal button:hover {
@@ -103,8 +113,9 @@
 .add-to-cart-btn {
 	width: 300px;
 	border-radius: 0;
-	padding: 10px 0;
+	padding: 11px 0;
 	background-color: #141414;
+	border-radius: 8px;
 }
 
 .quantity-text-modal {

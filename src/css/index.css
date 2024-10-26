@@ -23,6 +23,7 @@ body,
 	list-style-type: none;
 	font-family: "Afacad Flux", sans-serif;
 	user-select: none;
+	justify-content: space-evenly;
 }
 
 #scrollToTop {

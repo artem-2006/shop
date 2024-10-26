@@ -24,7 +24,7 @@ export function counter() {
 
 export function imageSwitcher() {
 	document.addEventListener("DOMContentLoaded", function () {
-		const cards = ["card1", "card2", "card3", "card4"];
+		const cards = ["card1", "card2", "card3", "card4", "card5"];
 
 		cards.forEach((cardId) => {
 			const card = document.getElementById(cardId);

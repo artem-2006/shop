@@ -42,7 +42,7 @@
 }
 
 .nav-item-link {
-	font-size: 16px;
+	font-size: 17.2px;
 	color: #000000;
 	text-decoration-line: none;
 	font-weight: 450;
@@ -70,7 +70,6 @@
 	background-color: var(--color-count-btn);
 	color: white;
 	border-radius: 50%;
-
 	font-size: 12px;
 	font-weight: bold;
 	min-width: 19px;
