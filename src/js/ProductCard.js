@@ -1,5 +1,23 @@
 import { productsData } from "./productsData.js";
 
+function preloadImages() {
+	for (const productKey in productsData) {
+		if (productsData.hasOwnProperty(productKey)) {
+			const product = productsData[productKey];
+
+			// Предварительная загрузка основного изображения
+			const mainImage = new Image();
+			mainImage.src = product.mainImg;
+
+			// Предварительная загрузка миниатюр
+			product.thumbnails.forEach((thumbnail) => {
+				const thumbImage = new Image();
+				thumbImage.src = thumbnail;
+			});
+		}
+	}
+}
+
 function updateQuantity(value) {
 	const quantityValueElement = document.querySelector(".quantity-value-modal");
 	let quantity = parseInt(quantityValueElement.textContent);
@@ -17,27 +35,15 @@ function initializeProductCards() {
 			if (productData) {
 				document.getElementById("productTitle").textContent = productData.title;
 				document.getElementById("productPrice").textContent = productData.price;
-
-				const mainImage = new Image();
-				mainImage.src = productData.mainImg;
-
-				mainImage.onload = function () {
-					document.querySelector(".main-product-image").src = productData.mainImg;
-				};
+				document.querySelector(".main-product-image").src = productData.mainImg;
+				document.getElementById("productDescription").textContent = productData.description;
 
 				const galleryPreviewElements = document.querySelectorAll(".gallery-item img");
 				productData.thumbnails.forEach((thumb, index) => {
-					const thumbnailImage = new Image();
-					thumbnailImage.src = thumb;
-
 					if (galleryPreviewElements[index]) {
-						thumbnailImage.onload = function () {
-							galleryPreviewElements[index].src = thumb;
-						};
+						galleryPreviewElements[index].src = thumb;
 					}
 				});
-
-				document.getElementById("productDescription").textContent = productData.description;
 			}
 
 			document.querySelector(".quantity-value-modal").textContent = "1";
@@ -57,6 +63,7 @@ function initializeQuantityButtons() {
 }
 
 function init() {
+	preloadImages(); // Предварительная загрузка изображений
 	initializeProductCards();
 	initializeQuantityButtons();
 }
