@@ -5,11 +5,9 @@ function preloadImages() {
 		if (productsData.hasOwnProperty(productKey)) {
 			const product = productsData[productKey];
 
-			// Предварительная загрузка основного изображения
 			const mainImage = new Image();
 			mainImage.src = product.mainImg;
 
-			// Предварительная загрузка миниатюр
 			product.thumbnails.forEach((thumbnail) => {
 				const thumbImage = new Image();
 				thumbImage.src = thumbnail;
@@ -63,7 +61,7 @@ function initializeQuantityButtons() {
 }
 
 function init() {
-	preloadImages(); // Предварительная загрузка изображений
+	preloadImages();
 	initializeProductCards();
 	initializeQuantityButtons();
 }
