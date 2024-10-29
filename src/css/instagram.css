@@ -16,7 +16,7 @@
 	width: 100%;
 	height: auto;
 	display: block;
-	transition: all 0.6s;
+	transition: all 0.5s;
 }
 
 .instagram-item img:hover {
@@ -27,12 +27,4 @@
 	margin-bottom: 20px;
 	margin-top: 70px;
 	font-size: 28px;
-}
-
-.img-inst-botton {
-	border-bottom-right-radius: 40px;
-}
-
-.img-inst-top {
-	border-top-left-radius: 40px;
 }

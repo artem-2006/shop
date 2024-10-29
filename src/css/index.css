@@ -6,11 +6,12 @@
 @import url(./related-products.css);
 @import url(./instagram.css);
 @import url(./modal-basket.css);
+@import url(./footer.css);
 
 :root {
 	--color-background-light: #f7f7f7;
 	--color-hover-btn: #eeeeee;
-	--color-count-btn: rgb(175, 54, 54);
+	--color-count-btn: rgb(255, 48, 48);
 }
 
 html,

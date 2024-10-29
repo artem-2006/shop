@@ -1,0 +1,19 @@
+.social-item a i.bi-facebook:hover {
+	color: #3532da;
+}
+
+.social-item a i.bi-instagram:hover {
+	color: #e1306c;
+}
+
+.social-item a i.bi-twitter:hover {
+	color: #1da1f2;
+}
+
+.social-item a i.bi-youtube:hover {
+	color: #ff0000;
+}
+
+footer {
+	box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
