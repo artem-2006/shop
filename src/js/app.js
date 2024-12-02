@@ -5,3 +5,7 @@ imageSwitcher();
 counter();
 scrollTopBtn();
 addBasket();
+
+AOS.init({
+	once: true,
+});
