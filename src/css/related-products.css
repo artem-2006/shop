@@ -25,7 +25,8 @@
 	transition: all 0.3s;
 }
 .related-products img:hover {
-	opacity: 50%;
+	opacity: 65%;
+	transform: translateY(-10px);
 }
 
 .modal-cart .modal-lg {

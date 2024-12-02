@@ -30,6 +30,9 @@
 .custom-control-prev {
 	border-top-left-radius: 10px;
 }
+.custom-control-next {
+	border-bottom-right-radius: 10px;
+}
 
 .custom-control-prev:hover,
 .custom-control-next:hover {

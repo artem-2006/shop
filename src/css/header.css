@@ -99,16 +99,10 @@
 	background-color: var(--color-hover-btn);
 }
 
-.image-vertical-left,
 .image-vertical-right {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-}
-
-.image-vertical-left {
-	left: -80px;
-	transform: translateY(-50%) rotate(-90deg);
 }
 
 .image-vertical-right {
@@ -123,7 +117,7 @@
 	transform: translateY(-50%);
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: 4px;
 	font-size: 24px;
 }
 
