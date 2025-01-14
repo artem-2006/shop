@@ -2,6 +2,9 @@
 	border-bottom: none;
 	padding: 10px 15px;
 }
+.related-products .container {
+	padding: 5px;
+}
 .related-products img {
 	margin-bottom: 15px;
 }
