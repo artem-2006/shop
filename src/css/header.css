@@ -18,9 +18,12 @@
 	width: 40px;
 	margin-right: 10px;
 }
-.active-nav {
-	border-bottom: solid 2px #000000;
+
+.nav-item-link.active-nav::after {
+	background-color: #000000;
+	bottom: 0px; /* Поднимем подчеркивание еще выше */
 }
+
 .bnt-cart-count-mobile {
 	position: absolute;
 	display: flex;

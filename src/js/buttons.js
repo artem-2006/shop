@@ -64,3 +64,17 @@ export function scrollTopBtn() {
 		});
 	};
 }
+
+function displayHiddenMuv() {
+	const mainBtn = document.getElementById("mainBtn"); // убираем '#'
+	const aboutBtn = document.getElementById("aboutBtn"); // убираем '#'
+	const displayHidden = document.querySelector(".display-hidden");
+
+	mainBtn.onclick = () => {
+		displayHidden.style.display = "block";
+	};
+
+	aboutBtn.addEventListener("click", () => {
+		displayHidden.style.display = "none";
+	});
+}
